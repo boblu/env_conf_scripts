@@ -1,0 +1,5 @@
+# should set environment variables using export
+
+
+# This should be the last line of .bash_profile
+test -r ~/.bashrc && . ~/.bashrc

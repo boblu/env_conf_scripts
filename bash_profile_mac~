@@ -1,0 +1,6 @@
+# should set environment variables using export
+#export CLICOLOR=1
+
+
+# This should be the last line of .bash_profile
+test -r ~/.bashrc && . ~/.bashrc
