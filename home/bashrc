@@ -1,0 +1,19 @@
+export PATH=/usr/local/opt/coreutils/libexec/gnubin:/usr/local/bin:$PATH
+export MANPATH=/usr/local/opt/coreutils/libexec/gnuman:$MANPATH
+
+source ~/.git-prompt.sh
+source ~/.git-completion.bash
+
+alias ls='ls --color -N'
+alias ll='ls -l'
+alias la='ls -a'
+alias rm='rm -i'
+
+if [ "`id -u`" -eq 0 ]; then
+   # as root
+    PS1='\[\e[1;31m\]\u\[\e[1;36m\]\[\033[m\]@\[\e[1;36m\]\h\[\033[m\]:\[\e[0m\]\[\e[1;32m\][\W]> \[\e[0m\]$(__git_ps1 " (%s)") '
+else
+   # as user
+    PS1='\[\e[1m\]\u\[\e[1;36m\]\[\033[m\]@\[\e[1;36m\]\h\[\033[m\]:\[\e[0m\]\[\e[1;32m\][\W]>\[\e[0m\]$(__git_ps1 " (%s)") '
+fi
+

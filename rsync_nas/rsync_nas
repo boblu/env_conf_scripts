@@ -1,0 +1,37 @@
+#!/bin/bash
+
+# ===================================
+LOG_FILE=/root/bin/rsync_nas.log
+SOURCE_NAME="JLData"
+SOURCE_HANDLER="/root/bin/handle_timeCapsule"
+SOURCE_POINT="/mnt/JLData/"
+TARGET_NAME="JLBackup"
+TARGET_HANDLER="/root/bin/handle_usbNAS"
+TARGET_POINT="/mnt/JLBackup/JLTC_Backup/"
+# ===================================
+
+TIMESTAMP="date +%Y-%m-%d.%H:%M:%S"
+
+echo "["`$TIMESTAMP`"] ==== Start mounting disks" >> $LOG_FILE
+$SOURCE_HANDLER >> $LOG_FILE 2>&1
+sleep 3
+$TARGET_HANDLER >> $LOG_FILE 2>&1
+sleep 3
+
+IS_SOURCE_MOUNTED=`mount 2> /dev/null | grep "$SOURCE_NAME" | cut -d' ' -f3`
+IS_TARGET_MOUNTED=`mount 2> /dev/null | grep "$TARGET_NAME" | cut -d' ' -f3`
+
+if [[ "$IS_SOURCE_MOUNTED" && "$IS_TARGET_MOUNTED" ]] ; then
+    echo "["`$TIMESTAMP`"] ==== Start rsyncing data" >> $LOG_FILE
+    /usr/bin/rsync -az --delete $SOURCE_POINT $TARGET_POINT >> $LOG_FILE 2>&1
+    STATUS=$?
+    echo "["`$TIMESTAMP`"] ==== Rsync finished" >> $LOG_FILE
+fi
+
+if [[ $STATUS -eq 0 ]] ; then
+    $SOURCE_HANDLER >> $LOG_FILE 2>&1
+    sleep 3
+    $TARGET_HANDLER >> $LOG_FILE 2>&1
+    sleep 3
+    echo "["`$TIMESTAMP`"] ==== Disk umounted, ready to shutdown" >> $LOG_FILE
+i

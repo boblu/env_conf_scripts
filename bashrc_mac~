@@ -1,4 +1,0 @@
-alias ls='ls -G'
-alias ll='ls -lG'
-
-export PATH=/usr/local/bin:$PATH

@@ -1,0 +1,93 @@
+#### necessary gems ####
+# wirble map_by_method
+########################
+
+# show multibity chars correctly
+if defined?(VERSION) and VERSION < '1.9'
+   $KCODE = 'u'
+end
+
+# make gems availabe
+require 'rubygems'
+
+# print to yaml format with "y"
+require 'yaml'
+
+# pretty print method
+require 'pp'
+
+# tab completion
+require 'irb/completion'
+
+# save irb command history 
+require 'irb/ext/save-history'
+
+require 'map_by_method'
+
+begin
+  # load wirble
+  require 'wirble'
+
+  # start wirble (with color)
+  Wirble.init
+  Wirble.colorize
+rescue LoadError => err
+  warn "Couldn't load Wirble: #{err}"
+end
+
+# Quick benchmarking facility
+# Based on rue's irbrc => http://pastie.org/179534
+def quick(repetitions=100, &block)
+  require 'benchmark'
+  Benchmark.bmbm do |b|
+    b.report {repetitions.times &block} 
+  end
+  nil
+end
+
+
+
+
+
+# Include line numbers and indent levels:
+IRB.conf[:PROMPT][:SHORT] = {
+  :PROMPT_C=>"%03n:%i* ",
+  :RETURN=>"%s\n",
+  :PROMPT_I=>"%03n:%i> ",
+  :PROMPT_N=>"%03n:%i> ",
+  :PROMPT_S=>"%03n:%i%l "
+}
+
+IRB.conf[:PROMPT_MODE] = :SHORT
+# Adds readline functionality
+IRB.conf[:USE_READLINE] = true
+# Auto indents suites
+IRB.conf[:AUTO_INDENT] = true
+# Where history is saved
+IRB.conf[:HISTORY_FILE] = "#{ENV['HOME']}/.irb-save-history"
+# How many lines to save
+IRB.conf[:SAVE_HISTORY] = 1000
+
+
+
+
+
+
+# ls command 
+def ls(arg)
+system "ls #{arg}"
+end
+
+# Easily print methods local to an object's class
+class Object
+  def local_methods
+    (methods - Object.instance_methods).sort
+  end
+end
+
+# Return only the methods not present on basic objects
+class Object
+  def interesting_methods
+    (self.methods - Object.new.methods).sort
+  end
+end

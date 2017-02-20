@@ -1,0 +1,164 @@
+
+[2015-03-02.15:10:01] ==== Start mounting disks
+[2015-03-02.15:10:08] ==== Start rsyncing data
+/usr/bin/rsync -ad /mnt/JLData/ /mnt/JLBackup/JLTC_Backup/ >> /root/bin/rsync.log 2>&1
+[2015-03-02.15:10:08] ==== Rsync finished
+[2015-03-02.15:10:14] ==== Disk umounted, ready to shutdown
+[2015-03-02.15:13:01] ==== Start mounting disks
+[2015-03-02.15:13:08] ==== Start rsyncing data
+[2015-03-03.18:19:53] ==== Rsync finished
+[2015-03-03.18:20:00] ==== Disk umounted, ready to shutdown
+[2015-03-03.22:37:20] ==== Start mounting disks
+[2015-03-03.22:37:27] ==== Start rsyncing data
+rsync error: received SIGINT, SIGTERM, or SIGHUP (code 20) at rsync.c(549) [sender=3.0.9]
+[2015-03-03.22:41:15] ==== Rsync finished
+[2015-03-03.22:45:01] ==== Start mounting disks
+[2015-03-03.22:45:08] ==== Start rsyncing data
+[2015-03-03.23:02:30] ==== Rsync finished
+[2015-03-03.23:02:37] ==== Disk umounted, ready to shutdown
+[2015-03-13.00:40:01] ==== Start mounting disks
+[2015-03-13.00:40:08] ==== Start rsyncing data
+[2015-03-13.01:05:16] ==== Rsync finished
+[2015-03-13.01:05:23] ==== Disk umounted, ready to shutdown
+[2015-03-14.00:00:01] ==== Start mounting disks
+[2015-03-14.00:00:17] ==== Start rsyncing data
+[2015-03-14.00:00:48] ==== Rsync finished
+[2015-03-14.00:00:55] ==== Disk umounted, ready to shutdown
+[2015-03-14.16:20:26] ==== Start mounting disks
+[2015-03-14.16:20:33] ==== Start rsyncing data
+[2015-03-14.16:24:33] ==== Rsync finished
+[2015-03-14.16:24:40] ==== Disk umounted, ready to shutdown
+[2015-03-18.22:26:52] ==== Start mounting disks
+[2015-03-18.22:27:00] ==== Start rsyncing data
+[2015-03-18.22:54:45] ==== Rsync finished
+[2015-03-18.22:54:51] ==== Disk umounted, ready to shutdown
+[2015-03-27.00:00:01] ==== Start mounting disks
+[2015-03-27.00:00:08] ==== Start rsyncing data
+[2015-03-27.00:00:51] ==== Rsync finished
+[2015-03-27.00:00:58] ==== Disk umounted, ready to shutdown
+[2015-04-10.00:00:01] ==== Start mounting disks
+[2015-04-10.00:00:17] ==== Start rsyncing data
+[2015-04-10.00:00:54] ==== Rsync finished
+[2015-04-10.00:01:02] ==== Disk umounted, ready to shutdown
+[2015-05-04.00:00:01] ==== Start mounting disks
+[2015-05-04.00:00:08] ==== Start rsyncing data
+[2015-05-04.00:11:15] ==== Rsync finished
+[2015-05-04.00:11:22] ==== Disk umounted, ready to shutdown
+[2015-05-26.23:22:49] ==== Start mounting disks
+[2015-05-26.23:22:56] ==== Start rsyncing data
+rsync error: received SIGINT, SIGTERM, or SIGHUP (code 20) at rsync.c(549) [sender=3.0.9]
+[2015-05-26.23:23:05] ==== Rsync finished
+[2015-05-26.23:23:31] ==== Start mounting disks
+[2015-05-26.23:23:44] ==== Disk umounted, ready to shutdown
+[2015-05-26.23:47:54] ==== Start mounting disks
+[2015-05-26.23:48:00] ==== Start rsyncing data
+[2015-05-26.23:59:40] ==== Rsync finished
+umount: /mnt/JLBackup: device is busy.
+        (In some cases useful info about processes that use
+         the device is found by lsof(8) or fuser(1))
+rmdir: failed to remove `/mnt/JLBackup': Device or resource busy
+[2015-05-26.23:59:46] ==== Disk umounted, ready to shutdown
+[2015-05-27.00:11:21] ==== Start mounting disks
+[2015-05-27.00:11:37] ==== Start rsyncing data
+[2015-05-27.00:12:11] ==== Rsync finished
+[2015-05-27.00:12:19] ==== Disk umounted, ready to shutdown
+[2015-05-27.22:06:17] ==== Start mounting disks
+[2015-05-27.22:06:25] ==== Start rsyncing data
+[2015-05-27.22:11:40] ==== Rsync finished
+[2015-05-27.22:11:47] ==== Disk umounted, ready to shutdown
+[2015-06-21.22:05:50] ==== Start mounting disks
+[2015-06-21.22:05:58] ==== Start rsyncing data
+file has vanished: "/mnt/JLData/jiaeil/HomeVideo/2015/mov/2015-05-15 18.24.51.mov"
+file has vanished: "/mnt/JLData/jiaeil/HomeVideo/2015/mov/2015-05-16 09.54.43.mov"
+rsync warning: some files vanished before they could be transferred (code 24) at main.c(1070) [sender=3.0.9]
+[2015-06-21.22:13:24] ==== Rsync finished
+[2015-08-05.00:00:01] ==== Start mounting disks
+[2015-08-05.00:00:18] ==== Start rsyncing data
+[2015-08-05.00:23:56] ==== Rsync finished
+[2015-08-05.00:24:03] ==== Disk umounted, ready to shutdown
+[2015-08-16.20:06:11] ==== Start mounting disks
+[2015-08-16.20:06:19] ==== Start rsyncing data
+[2015-08-16.20:08:31] ==== Rsync finished
+[2015-08-16.20:08:38] ==== Disk umounted, ready to shutdown
+[2015-08-16.20:30:35] ==== Start mounting disks
+[2015-08-16.20:30:42] ==== Start rsyncing data
+[2015-08-16.20:31:35] ==== Rsync finished
+[2015-08-16.20:31:42] ==== Disk umounted, ready to shutdown
+[2015-08-16.20:42:12] ==== Start mounting disks
+[2015-08-16.20:42:25] ==== Disk umounted, ready to shutdown
+[2015-08-16.20:43:06] ==== Start mounting disks
+[2015-08-16.20:43:13] ==== Start rsyncing data
+[2015-08-16.20:44:12] ==== Rsync finished
+[2015-08-16.20:44:19] ==== Disk umounted, ready to shutdown
+[2015-08-31.00:00:01] ==== Start mounting disks
+[2015-08-31.00:00:19] ==== Start rsyncing data
+[2015-08-31.00:01:35] ==== Rsync finished
+[2015-08-31.00:01:42] ==== Disk umounted, ready to shutdown
+[2015-09-23.22:21:04] ==== Start mounting disks
+[2015-09-23.22:21:11] ==== Start rsyncing data
+[2015-09-23.22:36:40] ==== Rsync finished
+[2015-09-23.22:36:47] ==== Disk umounted, ready to shutdown
+[2015-11-17.21:11:43] ==== Start mounting disks
+[2015-11-17.21:11:50] ==== Start rsyncing data
+[2015-11-17.22:34:06] ==== Rsync finished
+[2015-11-17.22:34:13] ==== Disk umounted, ready to shutdown
+[2016-01-17.13:05:46] ==== Start mounting disks
+[2016-01-17.13:06:02] ==== Start rsyncing data
+[2016-01-17.15:55:55] ==== Rsync finished
+[2016-01-17.15:56:02] ==== Disk umounted, ready to shutdown
+[2016-01-20.00:00:01] ==== Start mounting disks
+[2016-01-20.00:00:08] ==== Start rsyncing data
+[2016-01-20.00:01:14] ==== Rsync finished
+[2016-01-20.00:01:21] ==== Disk umounted, ready to shutdown
+[2016-01-20.23:46:58] ==== Start mounting disks
+[2016-01-20.23:47:14] ==== Start rsyncing data
+[2016-01-20.23:48:11] ==== Rsync finished
+[2016-01-20.23:48:18] ==== Disk umounted, ready to shutdown
+[2016-01-21.00:00:01] ==== Start mounting disks
+[2016-01-21.00:00:17] ==== Start rsyncing data
+[2016-01-21.00:01:15] ==== Rsync finished
+[2016-01-21.00:01:22] ==== Disk umounted, ready to shutdown
+[2016-02-08.20:01:10] ==== Start mounting disks
+[2016-02-08.20:01:17] ==== Start rsyncing data
+[2016-02-08.21:05:18] ==== Rsync finished
+[2016-02-08.21:05:25] ==== Disk umounted, ready to shutdown
+[2016-09-08.00:00:01] ==== Start mounting disks
+[2016-09-08.00:00:18] ==== Start rsyncing data
+[2016-09-08.22:17:17] ==== Start mounting disks
+[2016-09-08.22:17:24] ==== Start rsyncing data
+[2016-09-09.00:00:01] ==== Start mounting disks
+umount: /mnt/JLData: device is busy.
+        (In some cases useful info about processes that use
+         the device is found by lsof(8) or fuser(1))
+rmdir: failed to remove `/mnt/JLData': Device or resource busy
+umount: /mnt/JLBackup: device is busy.
+        (In some cases useful info about processes that use
+         the device is found by lsof(8) or fuser(1))
+rmdir: failed to remove `/mnt/JLBackup': Device or resource busy
+[2016-09-09.00:00:08] ==== Start rsyncing data
+rsync: stat "/mnt/JLBackup/JLTC_Backup/jiaeil/Backup/SIS-work/workspace/MPM-GSCM/WEB-INF/lib/.postgresql-9.0-801.jdbc4.jar.8dXbfM" failed: No such file or directory (2)
+rsync: rename "/mnt/JLBackup/JLTC_Backup/jiaeil/Backup/SIS-work/workspace/MPM-GSCM/WEB-INF/lib/.postgresql-9.0-801.jdbc4.jar.8dXbfM" -> "jiaeil/Backup/SIS-work/workspace/MPM-GSCM/WEB-INF/lib/postgresql-9.0-801.jdbc4.jar": No such file or directory (2)
+rsync: stat "/mnt/JLBackup/JLTC_Backup/jiaeil/Backup/SIS-work/workspace/SEPG-GSCM/WEB-INF/RakAppl/log/error/SQL/.20160601.txt.gz.MewKqT" failed: No such file or directory (2)
+rsync: rename "/mnt/JLBackup/JLTC_Backup/jiaeil/Backup/SIS-work/workspace/SEPG-GSCM/WEB-INF/RakAppl/log/error/SQL/.20160601.txt.gz.MewKqT" -> "jiaeil/Backup/SIS-work/workspace/SEPG-GSCM/WEB-INF/RakAppl/log/error/SQL/20160601.txt.gz": No such file or directory (2)
+rsync: writefd_unbuffered failed to write 4 bytes to socket [sender]: Broken pipe (32)
+rsync: connection unexpectedly closed (1116451 bytes received so far) [sender]
+rsync error: error in rsync protocol data stream (code 12) at io.c(605) [sender=3.0.9]
+[2016-09-09.01:18:16] ==== Rsync finished
+[2016-09-09.17:01:25] ==== Rsync finished
+[2016-09-09.17:01:32] ==== Disk umounted, ready to shutdown
+[2016-09-10.00:00:01] ==== Start mounting disks
+[2016-09-10.00:00:08] ==== Start rsyncing data
+[2016-09-10.10:04:03] ==== Rsync finished
+[2016-09-10.10:04:10] ==== Disk umounted, ready to shutdown
+[2017-01-17.00:00:01] ==== Start mounting disks
+[2017-01-17.00:00:19] ==== Start rsyncing data
+[2017-01-17.01:04:15] ==== Rsync finished
+[2017-01-17.01:04:22] ==== Disk umounted, ready to shutdown
+[2017-01-18.00:00:01] ==== Start mounting disks
+[2017-01-18.00:00:08] ==== Start rsyncing data
+[2017-01-18.00:04:12] ==== Rsync finished
+[2017-01-18.00:04:19] ==== Disk umounted, ready to shutdown
+[2017-01-19.00:00:01] ==== Start mounting disks
+[2017-01-19.00:00:08] ==== Start rsyncing data
+[2017-01-19.00:05:29] ==== Rsync finished
+[2017-01-19.00:05:37] ==== Disk umounted, ready to shutdown

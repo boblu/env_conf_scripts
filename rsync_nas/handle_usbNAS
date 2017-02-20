@@ -1,0 +1,18 @@
+#!/bin/bash
+
+# mount a usb connected NAS
+# Change HDD handler and mount point before using.
+# ============================
+HDD_DEVICE="/dev/sda2"
+MOUNT_POINT=/mnt/JLBackup
+# ============================
+
+IS_MOUNTED=`mount 2> /dev/null | grep "$MOUNT_POINT" | cut -d' ' -f3`
+
+if [[ "$IS_MOUNTED" ]] ;then
+    umount $MOUNT_POINT
+    rmdir $MOUNT_POINT
+else
+    mkdir $MOUNT_POINT
+    echo "mount $HDD_DEVICE $MOUNT_POINT " | /bin/bash
+fi
