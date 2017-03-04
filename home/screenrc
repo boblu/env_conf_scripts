@@ -16,6 +16,9 @@ defbce on   # use current bg color for erase
 # to make less command clear output on quit
 altscreen on
 
+# replace Ctrl-A with Ctrl-z
+escape ^Zz
+
 # mouse tracking allows to switch region focus by clicking
 # comment out 'cause select-to-copy does not work when enabled
 #defmousetrack on
